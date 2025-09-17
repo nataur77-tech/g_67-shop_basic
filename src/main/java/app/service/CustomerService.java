@@ -30,7 +30,7 @@ import java.util.List;
 public class CustomerService {
 
     private final CustomerRepository repository = new CustomerRepository();
-    private final ProductService productService = new ProductService();
+    private final ProductService productService =  ProductService.getInstance();
 
     public Customer save(Customer customer) {
         if (customer == null) {
